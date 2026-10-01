@@ -4,9 +4,12 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import org.springframework.web.bind.annotation.RequestBody;
+
 
 @Entity
 public class TarefaModel {
+
 
     @Id // Fica em cima do atributo ID
     @GeneratedValue(strategy = GenerationType.IDENTITY)
